@@ -17,6 +17,8 @@ function previous_image(){
     if (current_index > 0) {
         current_index -= 1;
         document.getElementById("current_comic").src = dir + filenames[current_index];
+        document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
+
     }
 }
 
@@ -24,6 +26,7 @@ function next_image(){
     if (current_index < filenames.length-1) {
         current_index += 1;
         document.getElementById("current_comic").src = dir + filenames[current_index];
+        document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
     }
 }
 
