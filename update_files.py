@@ -20,14 +20,30 @@ entries = ((stat[ST_CTIME], path)
 #NOTE: use `ST_MTIME` to sort by a modification date
 
 comics_list_file = open("filenames.txt", "w")
+javascript_text = open("myjs.js", "r")
+
 
 # for cdate, path in sorted(entries):
 #     print(time.ctime(cdate), os.path.basename(path))
+
+filename_list = []
 
 index = 1
 for cdate, path in sorted(entries):
     filename = os.path.basename(path)
     comics_list_file.write(str(index) + " " + filename + "\n")
+    filename_list.append(filename)
     index += 1
 
-comics_list_file.close()  
+
+javascript_gen_test = open("generated_javascript.js", "w")
+
+firstline = "var filenames = " + str(filename_list) + " \n"
+javascript_gen_test.write(firstline)
+javascript_text.readline()
+for line in javascript_text:
+    javascript_gen_test.write(line)
+
+javascript_gen_test.close()
+comics_list_file.close()
+javascript_text.close()

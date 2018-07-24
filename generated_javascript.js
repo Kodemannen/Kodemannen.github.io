@@ -1,4 +1,4 @@
-var filenames = ["Einstein.png", "Physics degree.png", "Auschwitz.png"];
+var filenames = ['Einstein.png', 'Physics degree.png', 'Auschwitz.png'] 
 
 // Code for displaying the last image on index:
 var dir = 'Comics/'; // your directory
