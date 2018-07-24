@@ -3,6 +3,8 @@ body {
     background-color:#263534;
 }
 
+
+
 #test {
     color: white;
 }
@@ -18,9 +20,6 @@ body {
 
 
 a {
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
     text-decoration: none;
 }
 
@@ -53,6 +52,8 @@ a {
     
 }
 
+
+
 img:hover{
     /*transform: scale(1);*/
     /*transform: skew(-0.1deg);*/
@@ -69,10 +70,43 @@ h1 {
 h2 {
     padding-top: 0px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 13px;
+    font-size: 15px;
     display: inline-block;
     color: #263534;
 }
+
+#previous-next {
+    text-align: center;
+    margin-bottom: -30px;
+}
+h3 {
+    margin-top: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    color: #263534;
+    font-size: 15px;
+}
+
+h4 {
+    margin-top: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    display: inline-block;
+    font-size: 24px;
+}
+
+/* #comictitle{
+    text-align: center;
+} */
+
+#Previous {
+    padding-right: 210px;
+}
+
+#Next {
+    padding-left: 210px;
+}
+
 span {
 }
 img {
@@ -80,3 +114,6 @@ img {
     /* width: 50%; */
 }
 
+#counter {
+    color: green;
+}

@@ -1,7 +1,10 @@
+
+
 <head>
     <title>A webcomic merely about stuff</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     <!-- <script type="text/javascript" language="javascript" scr="myjs.js"></script> -->
+
 </head>
 
 <body>
@@ -16,16 +19,32 @@
             </div>
 
             <div class="home-contact-etc">
-                <h2><a href=index.html>Home</a></h2>
+                <a href=index.html><h2>Home</h2></a>
                 &nbsp;
                 &nbsp;
-                <h2><a href="https://www.google.com">Contact</a></h2>
+                <a href="https://www.google.com"><h2>Contact</h2></a>
             </div>
+            
+            <div id="previous-next">
+                <a href="#" id="Previous" onclick="previous_image()"><h3>&lt&ltOlder</h3></a>
+                <h4 id="comic_title"></h4>
+                <a href="#" id="Next" onclick="next_image()"><h3>Newer&gt&gt</h3></a>
+            </div>
+            
+            <!-- <div id="comic_title"></div> -->
+            
+            
+            <img id="current_comic" class="comics" alt="Error" src="">
+            
 
-            <img id="current_comic" class="comics" alt="Error" src="Comics/Auschwitz2.png">
+            
     </main>
-    <p id="test"></p>
-    <script src="myjs.js"></script>
+    
+    <script src="myjs.js">
+        // $(document).ready(function() {
+        // });
+    </script>
+
     <noscript>Sorry, your browser does not support JavaScript!</noscript> 
 </body>
 
