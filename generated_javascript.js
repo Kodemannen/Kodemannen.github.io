@@ -35,3 +35,17 @@ function random_image(){
     document.getElementById("current_comic").src = dir + filenames[current_index];
     document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
 }
+
+
+function first_image(){
+    current_index = 0;
+    document.getElementById("current_comic").src = dir + filenames[current_index];
+    document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
+}
+
+
+function last_image(){
+    var last_index = filenames.length -1;
+    document.getElementById("current_comic").src = dir + filenames[last_index];
+    document.getElementById("comic_title").innerHTML = filenames[last_index].split(".")[0];
+}

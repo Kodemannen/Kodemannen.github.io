@@ -55,15 +55,29 @@ h2 {
 
 #previous-next {
     text-align: center;
-    margin-bottom: -17px;
+    margin-bottom: 0px;
 }
 h3 {
     margin-top: 0px;
+    margin-bottom: 0px;
     font-family: 'Courier New', Courier, monospace;
     display: inline-block;
-    /* color: #263534; */
+    color: #263534;
     font-size: 15px;
-    color: white;
+    /* color: #263534; */
+}
+
+.button {
+    margin-top: 5px;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color:  	#263534;
+    background-color: #618772;
+    /* color: #e7edaa; */
+    border-radius: 7px;
+    border-color: #263534;
+    border-width: 1px;
+    border-style: solid;
 }
 
 h4 {
@@ -77,11 +91,19 @@ h4 {
 
 
 #Previous {
-    margin-right: 160px;
+    margin-right: 15px;
 }
 
 #Next {
-    margin-left: 160px;
+    margin-left: 15px;
+}
+
+#First{
+    margin-right: 15px
+}
+
+#Last{
+    margin-left: 15px
 }
 
 span {
@@ -92,8 +114,3 @@ img {
 }
 
 
-.button {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color:  	#3b4f52;
-}
