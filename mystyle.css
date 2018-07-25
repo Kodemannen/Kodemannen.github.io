@@ -3,12 +3,6 @@ body {
     background-color:#263534;
 }
 
-
-
-#test {
-    color: white;
-}
-
 .page-box {
     background-color: white;
     margin-left: auto;
@@ -22,16 +16,6 @@ body {
 a {
     text-decoration: none;
 }
-
-/* .containerHead {
-    background-color: #618772;
-    background-color: white;
-    position: relative;
-    z-index: 1;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    height: 60px;
-} */
 
 
 .home-contact-etc {
@@ -53,12 +37,6 @@ a {
 }
 
 
-
-img:hover{
-    /*transform: scale(1);*/
-    /*transform: skew(-0.1deg);*/
-}
-
 h1 {
     padding-top: 14px;
     font-size: 28px;
@@ -77,34 +55,33 @@ h2 {
 
 #previous-next {
     text-align: center;
-    margin-bottom: -30px;
+    margin-bottom: -17px;
 }
 h3 {
     margin-top: 0px;
     font-family: 'Courier New', Courier, monospace;
     display: inline-block;
-    color: #263534;
+    /* color: #263534; */
     font-size: 15px;
+    color: white;
 }
 
 h4 {
-    margin-top: 0px;
+    margin-top: 12px;
     font-family: 'Courier New', Courier, monospace;
     color: black;
-    display: inline-block;
     font-size: 24px;
+    text-align: center;
+    margin-bottom: 4px;
 }
 
-/* #comictitle{
-    text-align: center;
-} */
 
 #Previous {
-    padding-right: 210px;
+    margin-right: 160px;
 }
 
 #Next {
-    padding-left: 210px;
+    margin-left: 160px;
 }
 
 span {
@@ -114,6 +91,9 @@ img {
     /* width: 50%; */
 }
 
-#counter {
-    color: green;
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color:  	#3b4f52;
 }

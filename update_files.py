@@ -22,10 +22,6 @@ entries = ((stat[ST_CTIME], path)
 comics_list_file = open("filenames.txt", "w")
 javascript_text = open("myjs.js", "r")
 
-
-# for cdate, path in sorted(entries):
-#     print(time.ctime(cdate), os.path.basename(path))
-
 filename_list = []
 
 index = 1

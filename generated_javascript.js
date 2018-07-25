@@ -1,4 +1,5 @@
 var filenames = ['Einstein.png', 'Physics degree.png', 'Auschwitz.png'] 
+// MAKE SURE THE LINE ABOVE IS THE FIRST LINE
 
 // Code for displaying the last image on index:
 var dir = 'Comics/'; // your directory
@@ -23,4 +24,14 @@ function next_image(){
         document.getElementById("current_comic").src = dir + filenames[current_index];
         document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
     }
+}
+
+function random_image(){   
+    var randint = Math.floor(Math.random() * filenames.length);
+    while (randint==current_index){
+        randint = Math.floor(Math.random() * filenames.length);
+    }
+    current_index = randint;
+    document.getElementById("current_comic").src = dir + filenames[current_index];
+    document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
 }
