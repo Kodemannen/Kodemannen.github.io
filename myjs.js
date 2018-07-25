@@ -1,5 +1,5 @@
-var filenames = ["Einstein.png", "Physics degree.png", "Auschwitz.png"];
-// MAKE SURE THE LINE ABOVE IS THE FIRST LINE
+var filenames = ['Einstein.png', 'Auschwitz.png', 'Physics degree.png'] 
+// MAKE SURE THE filenames declaration is on the first line
 
 // Code for displaying the last image on index:
 var dir = 'Comics/'; // your directory

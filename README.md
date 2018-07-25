@@ -1,2 +1,2 @@
 # Kodemannen.github.io
-Repo for my webpage for my comics
+Repo for webpage for my comics

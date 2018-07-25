@@ -1,0 +1,3 @@
+Instructions in case I forget:
+
+After adding a new comic to /Comics, simply run update_files.py and it will add the filenames to the javascript
