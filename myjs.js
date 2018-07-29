@@ -1,4 +1,4 @@
-var filenames = ['Auschwitz.png', 'Einstein.png', 'Physics degree.png'] 
+var filenames = ['Einstein.png', 'Physics degree.png', 'Auschwitz.png'] 
 // MAKE SURE THE filenames declaration is on the first line
 
 // Code for displaying the last image on index:
