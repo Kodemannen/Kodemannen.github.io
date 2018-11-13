@@ -111,8 +111,12 @@ h4 {
 
 
 #image-url{
-    margin-top: 12px;
+    margin-top: 24px;
+    color: #263534;
     text-align: center;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
 }
 
 #Previous {

@@ -31,6 +31,7 @@ document.getElementById("comic_title").innerHTML = current_filename.split(".")[0
 document.getElementById("current_comic").src = dir + current_filename;
 
 
+document.getElementById("image-url").innerHTML = "Link to this comic: https://merelyaboutstuff.com#" + (current_index + 1).toString(); 
 
 ///////////////////////////////
 ////// Button functions: //////
@@ -43,8 +44,10 @@ function previous_image(){
     }
     document.getElementById("Previous").href = "#" + (current_index + 1).toString();
     document.getElementById("Previous2").href = "#" + (current_index + 1).toString();
+    document.getElementById("image-url").innerHTML = "Link to this comic: https://merelyaboutstuff.com#" + (current_index + 1).toString(); 
 
 }
+
 
 function next_image(){
     if (current_index < filenames.length-1) {
@@ -54,6 +57,7 @@ function next_image(){
     }
     document.getElementById("Next").href = "#" + (current_index + 1).toString()
     document.getElementById("Next2").href = "#" + (current_index + 1).toString()
+    document.getElementById("image-url").innerHTML = "Link to this comic: https://merelyaboutstuff.com#" + (current_index + 1).toString(); 
 
 }
 
@@ -65,18 +69,20 @@ function random_image(){
     current_index = randint;
     document.getElementById("current_comic").src = dir + filenames[current_index];
     document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
+    
     document.getElementById("Random").href = "#" + (current_index + 1).toString();
     document.getElementById("Random2").href = "#" + (current_index + 1).toString();
-
+    document.getElementById("image-url").innerHTML = "Link to this comic: https://merelyaboutstuff.com#" + (current_index + 1).toString(); 
 }
 
 function first_image(){
     current_index = 0;
     document.getElementById("current_comic").src = dir + filenames[current_index];
     document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
-    document.getElementById("First").href = "#" + (current_index + 1).toString();    
-    document.getElementById("First2").href = "#" + (current_index + 1).toString();    
 
+    document.getElementById("First").href = "#" + (current_index + 1).toString();    
+    document.getElementById("First2").href = "#" + (current_index + 1).toString();
+    document.getElementById("image-url").innerHTML = "Link to this comic: https://merelyaboutstuff.com#" + (current_index + 1).toString();    
 }
 
 function last_image(){
@@ -84,7 +90,8 @@ function last_image(){
     document.getElementById("current_comic").src = dir + filenames[last_index];
     document.getElementById("comic_title").innerHTML = filenames[last_index].split(".")[0];
     current_index = last_index;
+
     document.getElementById("Last").href = "#" + (current_index + 1).toString();
     document.getElementById("Last2").href = "#" + (current_index + 1).toString();
-
+    document.getElementById("image-url").innerHTML = "Link to this comic: https://merelyaboutstuff.com#" + (current_index + 1).toString(); 
 }
