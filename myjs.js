@@ -1,20 +1,47 @@
 var filenames = ['Einstein.png', 'Physics degree.png', 'Auschwitz.png', 'Batman.png'] 
 // MAKE SURE THE filenames declaration is on the first line
 
+
+
 // Code for displaying the last image on index:
 var dir = 'Comics/'; // your directory
-var current_index = filenames.length-1;
+var hash_value = parseInt(window.location.hash.substr(1), 10);
 
+
+
+///////////////////////////////////////////////////////
+////// Checking that the hash is a valid one     //////
+////// and getting the image index from the hash //////
+///////////////////////////////////////////////////////
+if (hash_value.toString() == "NaN" || hash_value > filenames.length-1 || hash_value <= 0){
+    document.getElementById("dass").innerHTML = "asdkj";
+    var current_index = filenames.length-1;
+    window.location.hash = current_index+1;
+
+} else {
+    var current_index = hash_value-1;
+};
+
+
+
+//////////////////////////////////////////
+////// Loading the comic and title: //////
+//////////////////////////////////////////
 var current_filename = filenames[current_index];
 document.getElementById("comic_title").innerHTML = current_filename.split(".")[0];
 document.getElementById("current_comic").src = dir + current_filename;
 
 
+
+///////////////////////////////
+////// Button functions: //////
+///////////////////////////////
 function previous_image(){
     if (current_index > 0) {
         current_index -= 1;
         document.getElementById("current_comic").src = dir + filenames[current_index];
         document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
+        document.getElementById("Previous").href = "#" + (current_index + 1).toString();
     }
 }
 
@@ -23,6 +50,7 @@ function next_image(){
         current_index += 1;
         document.getElementById("current_comic").src = dir + filenames[current_index];
         document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
+        document.getElementById("Next").href = "#" + (current_index + 1).toString();
     }
 }
 
@@ -34,18 +62,20 @@ function random_image(){
     current_index = randint;
     document.getElementById("current_comic").src = dir + filenames[current_index];
     document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
+    document.getElementById("Random").href = "#" + (current_index + 1).toString();
 }
-
 
 function first_image(){
     current_index = 0;
     document.getElementById("current_comic").src = dir + filenames[current_index];
     document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
+    document.getElementById("First").href = "#" + (current_index + 1).toString();    
 }
-
 
 function last_image(){
     var last_index = filenames.length -1;
     document.getElementById("current_comic").src = dir + filenames[last_index];
     document.getElementById("comic_title").innerHTML = filenames[last_index].split(".")[0];
+    current_index = last_index;
+    document.getElementById("Last").href = "#" + (current_index + 1).toString();
 }
