@@ -1,5 +1,6 @@
 var filenames = ['Einstein.png', 'Physics degree.png', 'Auschwitz.png', 'Batman.png'] 
-// MAKE SURE THE filenames declaration is on the first line
+// MAKE SURE THE filenames declaration is on the first line, so that the python
+// script can add them
 
 
 
@@ -14,10 +15,8 @@ var hash_value = parseInt(window.location.hash.substr(1), 10);
 ////// and getting the image index from the hash //////
 ///////////////////////////////////////////////////////
 if (hash_value.toString() == "NaN" || hash_value > filenames.length-1 || hash_value <= 0){
-    document.getElementById("dass").innerHTML = "asdkj";
     var current_index = filenames.length-1;
     window.location.hash = current_index+1;
-
 } else {
     var current_index = hash_value-1;
 };
