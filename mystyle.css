@@ -110,6 +110,11 @@ h4 {
 }
 
 
+#image-url{
+    margin-top: 12px;
+    text-align: center;
+}
+
 #Previous {
     margin-right: 15px;
 }
