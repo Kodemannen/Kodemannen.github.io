@@ -40,8 +40,8 @@ function previous_image(){
         current_index -= 1;
         document.getElementById("current_comic").src = dir + filenames[current_index];
         document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
-        document.getElementById("Previous").href = "#" + (current_index + 1).toString();
     }
+    document.getElementById("Previous").href = "#" + (current_index + 1).toString();
 }
 
 function next_image(){
@@ -49,8 +49,8 @@ function next_image(){
         current_index += 1;
         document.getElementById("current_comic").src = dir + filenames[current_index];
         document.getElementById("comic_title").innerHTML = filenames[current_index].split(".")[0];
-        document.getElementById("Next").href = "#" + (current_index + 1).toString();
     }
+    document.getElementById("Next").href = "#" + (current_index + 1).toString()
 }
 
 function random_image(){   
