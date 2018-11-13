@@ -14,7 +14,7 @@ body {
 
 .social-media-buttons{
     padding-top: 14px;
-    text-align: center;
+    align-content: center;
 }
 
 a {
