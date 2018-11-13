@@ -12,13 +12,17 @@ body {
     z-index: 2;
 }
 
-.social-media-buttons {
-    margin-top: 14px;
-    align-content: center;
-};
-
-.fb-like{
-    align-content: center;
+.social-media-buttons{
+    position: relative;
+    padding: 0;
+    padding-top: 55px;
+}
+.fb-like {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 a {
@@ -111,6 +115,21 @@ h4 {
 }
 
 #Last{
+    margin-left: 15px
+}
+#Previous2 {
+    margin-right: 15px;
+}
+
+#Next2 {
+    margin-left: 15px;
+}
+
+#First2{
+    margin-right: 15px
+}
+
+#Last2{
     margin-left: 15px
 }
 
