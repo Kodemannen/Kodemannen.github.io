@@ -4,6 +4,18 @@
     <title>A webcomic merely about stuff</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     <!-- <script type="text/javascript" language="javascript" scr="myjs.js"></script> -->
+    
+    
+    
+    
+    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Your Website Title" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg"
+
+
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123043344-1"></script>
@@ -17,39 +29,55 @@
 </head>
 
 <body>
-    <main>
-        <div class="page-box">
-            <div class="containerHead">
-                <h1 id="penis" class="headline center">
-                A WEBCOMIC MERELY ABOUT STUFF</h1>
-            </div>
 
-            <div class="home-contact-etc">
-                <a href=https://merelyaboutstuff.com><h2>Home</h2></a>
-                &nbsp;
-                &nbsp;
-                <a href="contact.html"><h2>Contact</h2></a>
-            </div>
-            <h4 id="comic_title"></h4>
-            <div id="previous-next">
-                <a href="" id="First" class="button" onclick="first_image()"><h3>|&lt</h3></a>
-                <a href="" id="Previous" class="button" onclick="previous_image()"><h3>&ltOlder</h3></a>
-                <a href="" id="Random" class="button" onclick="random_image()"><h3>Random</h3></a>
-                <a href="" id="Next" class="button" onclick="next_image()"><h3>Newer&gt</h3></a>
-                <a href="" id="Last" class="button" onclick="last_image()"><h3>&gt|</h3></a>
-            </div>         
-            
-            <img id="current_comic" class="comics" alt="Error" src="">
-            
-            <div id="previous-next">
-                <a href="" id="First2" class="button" onclick="first_image()"><h3>|&lt</h3></a>
-                <a href="" id="Previous2" class="button" onclick="previous_image()"><h3>&ltOlder</h3></a>
-                <a href="" id="Random2" class="button" onclick="random_image()"><h3>Random</h3></a>
-                <a href="" id="Next2" class="button" onclick="next_image()"><h3>Newer&gt</h3></a>
-                <a href="" id="Last2" class="button" onclick="last_image()"><h3>&gt|</h3></a>
-            </div>
-    </main>    
-    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="page-box">
+
+        <div class="containerHead">
+            <h1 id="penis" class="headline center">
+            A WEBCOMIC MERELY ABOUT STUFF</h1>
+        </div>
+
+        <div class="home-contact-etc">
+            <a href=https://merelyaboutstuff.com><h2>Home</h2></a>
+            &nbsp;
+            &nbsp;
+            <a href="contact.html"><h2>Contact</h2></a>
+        </div>
+        <h4 id="comic_title"></h4>
+        <div id="previous-next">
+            <a href="" id="First" class="button" onclick="first_image()"><h3>|&lt</h3></a>
+            <a href="" id="Previous" class="button" onclick="previous_image()"><h3>&ltOlder</h3></a>
+            <a href="" id="Random" class="button" onclick="random_image()"><h3>Random</h3></a>
+            <a href="" id="Next" class="button" onclick="next_image()"><h3>Newer&gt</h3></a>
+            <a href="" id="Last" class="button" onclick="last_image()"><h3>&gt|</h3></a>
+        </div>         
+        
+        <img id="current_comic" class="comics" alt="Error" src="">
+        
+        <div id="previous-next">
+            <a href="" id="First2" class="button" onclick="first_image()"><h3>|&lt</h3></a>
+            <a href="" id="Previous2" class="button" onclick="previous_image()"><h3>&ltOlder</h3></a>
+            <a href="" id="Random2" class="button" onclick="random_image()"><h3>Random</h3></a>
+            <a href="" id="Next2" class="button" onclick="next_image()"><h3>Newer&gt</h3></a>
+            <a href="" id="Last2" class="button" onclick="last_image()"><h3>&gt|</h3></a>   
+        </div>
+        
+        <!--Social media buttons:-->
+        <div class="social-media-buttons">
+        </div>
+        <div class="fb-like" data-href="https://www.merelyaboutstuff.com" data-width="10" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+    </div>
+
     <script src="myjs.js"></script>
     <noscript>Sorry, your browser does not support JavaScript!</noscript> 
 </body>
