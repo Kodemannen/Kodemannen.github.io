@@ -12,8 +12,12 @@ body {
     z-index: 2;
 }
 
-.social-media-buttons{
-    padding-top: 14px;
+.social-media-buttons {
+    margin-top: 14px;
+    align-content: center;
+};
+
+.fb-like{
     align-content: center;
 }
 
