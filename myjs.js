@@ -1,4 +1,4 @@
-var filenames = ['Physics degree.png', 'Auschwitz.png', 'Batman.png', 'Einstein.png'] 
+var filenames = ['Einstein.png', 'Physics degree.png', 'Auschwitz.png', 'Batman.png'] 
 // MAKE SURE THE filenames declaration is on the first line, so that the python
 // script can add them
 
