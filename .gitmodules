@@ -1,0 +1,9 @@
+[submodule "t-rex-runner"]
+	path = t-rex-runner
+	url = https://github.com/Kodemannen/t-rex-runner.git
+[submodule "test"]
+	path = test
+	url = https://github.com/Kodemannen/t-rex-runner.git
+[submodule "t-rex-runner-clone"]
+	path = t-rex-runner-clone
+	url = https://github.com/Kodemannen/t-rex-runner.git
